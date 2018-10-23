@@ -55,7 +55,7 @@
                         </div>
                         <div class="col-6"></div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-outline-success btn-block" href="produto-formulario.php">Limpar</button>
+                            <button type="button" class="btn btn-outline-success btn-block" href="func-formulario.php">Limpar</button>
                         </div>
                     </div>
                 </div>

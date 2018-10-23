@@ -25,7 +25,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="index.php">Home</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="produto-formulario.php">Cadastrar</a>
+                    <a class="dropdown-item" href="func-formulario.php">Cadastrar</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="lista-func.php">Funcionarios</a>
                     <?php echo ($_SERVER["REQUEST_URI"] == "/busca-func.php") ? "<div class='dropdown-divider'></div>
