@@ -9,7 +9,7 @@
 <section class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-10">
-            <form action="adiciona-produto.php" class="form-control-sm text-left" method="post">
+            <form action="adiciona-func.php" class="form-control-sm text-left" method="post">
                 <div class="form-group">
                     <label>Nome:</label>
                     <input class="form-control" type="text" name="nome">
