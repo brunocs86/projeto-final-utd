@@ -50,12 +50,13 @@
                 </div>
                 <div class="form-group">
                     <div class="row justify-content-center">
+
                         <div class="col-3">
-                            <button type="submit" class="btn btn-outline-success btn-block">Cadastrar</button>
+                            <button type="button" class="btn btn-outline-primary btn-block" href="func-formulario.php">Limpar</button>
                         </div>
                         <div class="col-6"></div>
                         <div class="col-3">
-                            <button type="button" class="btn btn-outline-success btn-block" href="func-formulario.php">Limpar</button>
+                            <button type="submit" class="btn btn-outline-success btn-block">Cadastrar</button>
                         </div>
                     </div>
                 </div>

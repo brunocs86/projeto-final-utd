@@ -13,7 +13,7 @@ function listaFunc($conn){
 
 function buscaPesquisa($conn, $buscar){
     $lista = array();
-    $query = "select * from funcionario where nome like '%$buscar%'";
+    $query = "select * from funcionario where nome like '%$buscar%' or email like '%$buscar%' or cpf like '%$buscar%'";
     $resultado = mysqli_query($conn, $query);
 
     while($funcionarios = mysqli_fetch_assoc($resultado)):
