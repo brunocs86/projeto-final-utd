@@ -66,6 +66,7 @@ $funcionario = buscaFuncionario($conn, $id);
                         </div>
                     </div>
                 </div>
+                <br>.<br>.<br>
             </form>
         </div>
     </div>

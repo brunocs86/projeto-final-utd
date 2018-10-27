@@ -1,2 +1,2 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', 'utd123456', 'db_utd');
+$conn = mysqli_connect('localhost', 'bcs', '123', 'db_utd');
