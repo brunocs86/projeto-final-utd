@@ -1,14 +1,20 @@
+<!--Template da parte superior das páginas-->
 <html>
 <head>
+    <!-- meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Cadastro de Funcionarios</title>
-    <link href="../assets/css/fontawesome-all.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../bootstrap/css/fontawesome-all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../bootstrap/css/style.css" rel="stylesheet">
 </head>
 <body>
 
+<!-- Header -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.php">BCS</a>
 
@@ -40,6 +46,8 @@
         </form>
     </div>
 </nav>
+<!-- Fim do header -->
 
+<!-- Area principal -->
 <div class="container">
     <div class="principal">

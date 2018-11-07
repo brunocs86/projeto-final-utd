@@ -1,12 +1,17 @@
         </div>
     </div>
-    <div class="footer fixed-bottom">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mr-auto">
-            © 2018 Copyright: Bruno Silva
-        </nav>
-    </div>
+    <!-- Fim da area principal -->
+    
 </body>
-        <script src="../assets/js/jquery.js"></script>
-        <script src="../assets/js/popper.js"></script>
-        <script src="../assets/js/bootstrap.js"></script>
+        <!-- Script para resetar os campus do fomulário -->
+        <script>
+            $(window).bind("pageshow", function() {
+            $('#myForm')[0].reset();
+            })
+        </script>
+
+        <!-- Script gerais-->
+        <script src="../bootstrap/js/jquery.js"></script>
+        <script src="../bootstrap/js/popper.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
 </html>

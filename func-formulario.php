@@ -1,15 +1,17 @@
 <?php
+    //Cabeçalho da página
     include("template/cabecalho.php");
+    //conexão com o banco
     include("conexao.php");
+    //funções de relacionamento com o banco mysql
     include("functions/funcionarios.php");
-
-    $setores = listaSetores($conn);
 ?>
+<!-- Fomulario de Cadastro de Funcionário-->
 <h1 class="p-1">Formulário de Cadastro</h1>
 <section class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-10">
-            <form action="adiciona-func.php" class="form-control-sm text-left" method="post">
+            <form action="adiciona-func.php" id="myForm" class="form-control-sm text-left" method="post">
                 <div class="form-group">
                     <label>Nome:</label>
                     <input class="form-control" type="text" name="nome">
@@ -52,7 +54,7 @@
                     <div class="row justify-content-center">
 
                         <div class="col-3">
-                            <button type="button" class="btn btn-outline-primary btn-block" href="func-formulario.php">Limpar</button>
+                            <button type="reset" name="limpar" class="btn btn-outline-primary btn-block" /*href="func-formulario.php"*/>Limpar</button>
                         </div>
                         <div class="col-6"></div>
                         <div class="col-3">
@@ -60,11 +62,12 @@
                         </div>
                     </div>
                 </div>
-                <br>.<br>.<br>
             </form>
         </div>
     </div>
 </section>
+<!-- Fim do Fomulario de Cadastro de Funcionário-->
 <?php
+    //Rodapé da página
     include("template/rodape.php");
 ?>

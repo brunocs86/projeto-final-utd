@@ -1,10 +1,15 @@
 <?php
+//Cabeçalho da página
 include("template/cabecalho.php");
+//conexão com o banco
 include("conexao.php");
+//funções de relacionamento com o banco mysql
 include("functions/funcionarios.php");
 
+//carrega os valores da tabela setores
 $setores = listaSetores($conn);
 
+//carrega dados do usuário conforme id
 $id = $_POST['id'];
 $funcionario = buscaFuncionario($conn, $id);
 ?>
@@ -12,7 +17,7 @@ $funcionario = buscaFuncionario($conn, $id);
 <section class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-10">
-            <form action="alteracao-func.php" class="form-control-sm text-left" method="post">
+            <form action="alteracao-func.php" id="myForm" class="form-control-sm text-left" method="post">
                 <input type="hidden" name="id" value="<?= $funcionario['id']?>">
                 <div class="form-group">
                     <label>Nome:</label>
@@ -58,7 +63,7 @@ $funcionario = buscaFuncionario($conn, $id);
                 <div class="form-group">
                     <div class="row justify-content-center">
                         <div class="col-3">
-                            <button type="button" class="btn btn-outline-primary btn-block" href="altera-func.php">Limpar</button>
+                            <button type="reset" name="limpar" class="btn btn-outline-primary btn-block" /*href="altera-func.php"*/>Limpar</button>
                         </div>
                         <div class="col-6"></div>
                         <div class="col-3">
@@ -66,14 +71,10 @@ $funcionario = buscaFuncionario($conn, $id);
                         </div>
                     </div>
                 </div>
-                <br>.<br>.<br>
             </form>
         </div>
     </div>
 </section>
 
+<!-- Rodapé da página -->
 <?php include("template/rodape.php");?>
-
-<!--header("Location: lista-func.php?alterado=true");
-die();
-?>-->

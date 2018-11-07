@@ -1,14 +1,19 @@
 <?php
+    //Cabeçalho da página
     include("template/cabecalho.php");
+    //conexão com o banco
     include("conexao.php");
+    //funções de relacionamento com o banco mysql
     include("functions/funcionarios.php");
 ?>
 
 <?php
+//Alerta de remoção de usuário
     if (array_key_exists("removido", $_GET) && $_GET['removido']=="true" ):?>
         <p class="alert-success"> Funcionário removido com sucesso!</p>
     <?php endif;?>
 
+<!--Carrega em uma tablea lista de funcionários do banco mysql-->
 <section class="container-fluid table-responsive">
 <table class="table table-bordered table-striped table-hover">
     <thead class="thead-light">
@@ -54,11 +59,15 @@
             </td>
         </tr>
 
-<?php
-    endforeach;
-?>
+        <?php
+            endforeach;
+        ?>
     </tbody>
 </table>
 </section>
+<!-- Fim da tabela -->
 
-<?php include("template/rodape.php");?>
+<?php 
+    //Rodapé da página
+    include("template/rodape.php");
+?>

@@ -1,2 +1,4 @@
 <?php
-$conn = mysqli_connect('localhost', 'bcs', '123', 'db_utd');
+
+//conexão com o banco utilizando orientação a objetos
+$conn = new mysqli('localhost', 'bcs', '123', 'db_utd');

@@ -1,12 +1,12 @@
 <?php
+    //Cabeçalho da página
     include("template/cabecalho.php");
+    //conexão com o banco
     include("conexao.php");
+    //funções de relacionamento com o banco mysql
     include("functions/funcionarios.php");
-
-
-
-//echo $buscar;
 ?>
+<!--Tabela com dados do usuário buscado-->
 <section class="container-fluid table-responsive">
     <table class="table table-bordered table-striped table-hover">
         <thead class="thead-light">
@@ -23,8 +23,12 @@
         </thead>
         <tbody>
         <?php
+        //Recebe criterio de busca
         $buscar = $_POST['buscar'];
+        //Convoca função de busca
         $lista = buscaPesquisa($conn, $buscar);
+
+        //Apresenta dados
         foreach ( $lista as $func ):
             ?>
             <tr class="text-sm">
@@ -59,4 +63,7 @@
         </tbody>
     </table>
 </section>
-<?php include("template/rodape.php");?>
+<?php 
+    //Rodapé da página
+    include("template/rodape.php");
+?>
